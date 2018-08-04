@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 3, Errors: 0, Skipped: 12, Time elapsed: 3.674 s <<< FAILURE! - in TestSuite
+openUrl(academy.HomePage)  Time elapsed: 3.347 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/openqa/selenium/chrome/ChromeDriver
+	at academy.HomePage.openUrl(HomePage.java:26)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.chrome.ChromeDriver
+	at academy.HomePage.openUrl(HomePage.java:26)
+
+openUrl(academy.AssertionTestCase)  Time elapsed: 3.349 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/openqa/selenium/chrome/ChromeDriver
+	at academy.AssertionTestCase.openUrl(AssertionTestCase.java:26)
+
+openUrl(academy.ValaidateNavigationBar)  Time elapsed: 3.351 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/openqa/selenium/chrome/ChromeDriver
+	at academy.ValaidateNavigationBar.openUrl(ValaidateNavigationBar.java:24)
+
