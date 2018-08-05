@@ -1,11 +1,31 @@
 package academy;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import org.openqa.selenium.Platform;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
 public class GitClass {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws MalformedURLException {
 	
 		
 	
+		DesiredCapabilities ch=new DesiredCapabilities();
+		
+		ch.acceptInsecureCerts();
+		ch.setBrowserName("chrome");
+		ch.setPlatform(Platform.WINDOWS);
+		
+		//If we want to run tests on nodes using Selenium Grid
+		
+		WebDriver driver =new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),ch);
+		
+		driver.get("https://www.google.com/");
+		
 
 	}
 	
