@@ -24,6 +24,12 @@ public class GitClass {
 		System.out.println("This is my gitmethod3");
 	}
 	
+	
+	public void gitmethod3()
+	{
+		System.out.println("This is my gitmethod3");
+	}
+	
 }
 
 class GitClass2 {
