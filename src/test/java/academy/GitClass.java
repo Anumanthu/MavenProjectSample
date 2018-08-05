@@ -25,9 +25,9 @@ public class GitClass {
 	}
 	
 	
-	public void gitmethod3()
+	public void gitmethod4()
 	{
-		System.out.println("This is my gitmethod3");
+		System.out.println("This is my gitmethod4");
 	}
 	
 }
