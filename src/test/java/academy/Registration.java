@@ -53,6 +53,12 @@ public class Registration extends Base{
 		
 	}
 	
+	@Test
+	public void assertEqulasverify()
+	{
+		
+	}
+	
 	@DataProvider(name="getdata")
 	public Object[][] getData()
 	{
