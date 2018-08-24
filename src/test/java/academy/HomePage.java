@@ -1,9 +1,13 @@
 package academy;
 
 import java.io.IOException;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
 //import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
@@ -21,11 +25,15 @@ public class HomePage extends Base{
 private static Logger log=LogManager.getLogger(HomePage.class.getName());
 
 	@BeforeMethod
-	public void openUrl() throws IOException
+	public void openUrl() throws IOException, InterruptedException
 	{
 		driver =initializeDriver();
 		 log.info("Driver initialized");
 		 driver.get(url);
+		 driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
+		 
+		 driver.findElement(By.xpath("//div[@style='position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px inset;']")).click();
+		 
 		 log.info("Opened url successfully");
 		 
 	}

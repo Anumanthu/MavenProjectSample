@@ -31,6 +31,12 @@ public class LandingPage {
 	@FindBy(xpath="//div[@class='text-center']/h2")
 	public WebElement getTitle;
 	
+	@FindBy(xpath="//span[contains(text(),'Register')]")
+	public WebElement register;
+	
+	
+	//span[contains(text(),'Register')]
+	
 	public WebElement getLogin()
 	{
 		return signin;

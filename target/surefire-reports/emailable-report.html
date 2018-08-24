@@ -1,76 +1,166 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-<title>TestNG Report</title>
-<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
 </head>
 <body>
-<table>
-<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">5</td><td class="num">0</td><td class="num">94</td><td></td><td></td></tr>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">4</td><td class="numi">198.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">academy.AssertionTestCase</td><td><a href="#m0">openUrl</a></td><td rowspan="1">1533052786578</td><td rowspan="1">1</td></tr><tr class="failedodd"><td rowspan="1">academy.HomePage</td><td><a href="#m1">openUrl</a></td><td rowspan="1">1533052786516</td><td rowspan="1">36</td></tr><tr class="failedeven"><td rowspan="1">academy.ValaidateNavigationBar</td><td><a href="#m2">openUrl</a></td><td rowspan="1">1533052786580</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">academy.AssertionTestCase</td><td><a href="#m3">closeBrowser</a></td><td rowspan="1">1533052786579</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="5">academy.HomePage</td><td><a href="#m4">closeBrowser</a></td><td rowspan="3">1533052786577</td><td rowspan="3">0</td></tr><tr class="skippedodd"><td><a href="#m5">closeBrowser</a></td></tr><tr class="skippedodd"><td><a href="#m6">closeBrowser</a></td></tr><tr class="skippedodd"><td><a href="#m7">openUrl</a></td><td rowspan="2">1533052786577</td><td rowspan="2">0</td></tr><tr class="skippedodd"><td><a href="#m8">openUrl</a></td></tr><tr class="skippedeven"><td rowspan="1">academy.ValaidateNavigationBar</td><td><a href="#m9">closeBrowser</a></td><td rowspan="1">1533052786581</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">academy.AssertionTestCase</td><td><a href="#m10">basePageNavigation</a></td><td rowspan="1">1533052786579</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="3">academy.HomePage</td><td><a href="#m11">initialize</a></td><td rowspan="3">1533052786577</td><td rowspan="3">0</td></tr><tr class="skippedodd"><td><a href="#m12">initialize</a></td></tr><tr class="skippedodd"><td><a href="#m13">initialize</a></td></tr><tr class="skippedeven"><td rowspan="1">academy.ValaidateNavigationBar</td><td><a href="#m14">validateNavBar</a></td><td rowspan="1">1533052786580</td><td rowspan="1">0</td></tr></tbody>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="3">academy.HomePage</td><td><a href="#m1"><b>initialize</b>  </a></td><td class="numi">3</td><td>1535039032678</td><td class="numi">105704</td></tr><tr class="failedodd"><td><a href="#m2"><b>initialize</b>  </a></td><td class="numi">3</td><td>1535039032678</td><td class="numi">105704</td></tr><tr class="failedodd"><td><a href="#m3"><b>initialize</b>  </a></td><td class="numi">3</td><td>1535039032678</td><td class="numi">105704</td></tr>
+<tr class="failedeven"><td rowspan="1">academy.ValaidateNavigationBar</td><td><a href="#m4"><b>validateNavBar</b>  </a></td><td class="numi">1</td><td>1535039194522</td><td class="numi">11475</td></tr>
+<tr><th colspan="4">Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">academy.AssertionTestCase</td><td><a href="#m5"><b>basePageNavigation</b>  </a></td><td class="numi">1</td><td>1535039162053</td><td class="numi">10077</td></tr>
 </table>
-<h2>Test</h2><h3 id="m0">academy.AssertionTestCase#openUrl</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/openqa/selenium/chrome/ChromeDriver
-	at resources.Base.initializeDriver(Base.java:45)
-	at academy.AssertionTestCase.openUrl(AssertionTestCase.java:26)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">academy.HomePage#openUrl</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/openqa/selenium/chrome/ChromeDriver
-	at resources.Base.initializeDriver(Base.java:45)
-	at academy.HomePage.openUrl(HomePage.java:26)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.chrome.ChromeDriver
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	... 34 more
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">academy.ValaidateNavigationBar#openUrl</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/openqa/selenium/chrome/ChromeDriver
-	at resources.Base.initializeDriver(Base.java:45)
-	at academy.ValaidateNavigationBar.openUrl(ValaidateNavigationBar.java:24)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">academy.AssertionTestCase#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">academy.HomePage#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">academy.HomePage#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">academy.HomePage#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">academy.HomePage#openUrl</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">academy.HomePage#openUrl</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">academy.ValaidateNavigationBar#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">academy.AssertionTestCase#basePageNavigation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/openqa/selenium/chrome/ChromeDriver
-	at resources.Base.initializeDriver(Base.java:45)
-	at academy.AssertionTestCase.openUrl(AssertionTestCase.java:26)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">academy.HomePage#initialize</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/openqa/selenium/chrome/ChromeDriver
-	at resources.Base.initializeDriver(Base.java:45)
-	at academy.HomePage.openUrl(HomePage.java:26)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.chrome.ChromeDriver
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	... 34 more
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">academy.HomePage#initialize</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/openqa/selenium/chrome/ChromeDriver
-	at resources.Base.initializeDriver(Base.java:45)
-	at academy.HomePage.openUrl(HomePage.java:26)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.chrome.ChromeDriver
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	... 34 more
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m13">academy.HomePage#initialize</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/openqa/selenium/chrome/ChromeDriver
-	at resources.Base.initializeDriver(Base.java:45)
-	at academy.HomePage.openUrl(HomePage.java:26)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.chrome.ChromeDriver
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	... 34 more
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m14">academy.ValaidateNavigationBar#validateNavBar</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/openqa/selenium/chrome/ChromeDriver
-	at resources.Base.initializeDriver(Base.java:45)
-	at academy.ValaidateNavigationBar.openUrl(ValaidateNavigationBar.java:24)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-</body>
-</html>
+<h1>Test</h1>
+<h2 id="m1">academy.HomePage:initialize</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>Nandini@gmail.com</td>
+<td>ZZZZZ</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>timeout
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.09 seconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;ANUMANTHU-PC&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;10.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\ANUMAN~1\AppData\Local\Temp\scoped_dir7184_25388}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=68.0.3440.106, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 4b3d8decaa0e6f7b442fab145b008967</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+<br/>at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+<br/>at com.sun.proxy.$Proxy25.click(Unknown Source)
+<br/>at academy.HomePage.initialize(HomePage.java:50)
+<br/>28 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">academy.ValaidateNavigationBar:validateNavBar</h2>
+<div style="padding-left:3em">
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at academy.ValaidateNavigationBar.validateNavBar(ValaidateNavigationBar.java:43)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">academy.HomePage:initialize</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>Anumanthu@gmail.com</td>
+<td>XXXXXXXXX</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>timeout
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.13 seconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;ANUMANTHU-PC&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;10.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\ANUMAN~1\AppData\Local\Temp\scoped_dir7328_18569}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=68.0.3440.106, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 16f35fd5f8b7c34b95f49f7c4c7aae87</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+<br/>at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+<br/>at com.sun.proxy.$Proxy25.click(Unknown Source)
+<br/>at academy.HomePage.initialize(HomePage.java:50)
+<br/>28 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">academy.HomePage:initialize</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>Divya@gmail.com</td>
+<td>YYYYYY</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>timeout
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.14 seconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;ANUMANTHU-PC&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;10.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\ANUMAN~1\AppData\Local\Temp\scoped_dir4720_8298}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=68.0.3440.106, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: d2526bf81449614b104e6225d2a5976b</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+<br/>at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+<br/>at com.sun.proxy.$Proxy25.click(Unknown Source)
+<br/>at academy.HomePage.initialize(HomePage.java:50)
+<br/>28 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">academy.AssertionTestCase:basePageNavigation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

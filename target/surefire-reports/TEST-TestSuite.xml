@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="3.674" tests="15" errors="0" skipped="12" failures="3">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="199.927" tests="5" errors="0" skipped="0" failures="4">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -7,34 +7,35 @@
     <property name="file.encoding.pkg" value="sun.io"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\ANUMANTHU\Desktop\Selenium Learning\Workspace\MavenProjectSample\target\test-classes;C:\Users\ANUMANTHU\Desktop\Selenium Learning\Workspace\MavenProjectSample\target\classes;C:\Users\ANUMANTHU\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\ANUMANTHU\.m2\repository\org\seleniumhq\selenium\selenium-support\3.13.0\selenium-support-3.13.0.jar;C:\Users\ANUMANTHU\.m2\repository\org\seleniumhq\selenium\selenium-api\3.13.0\selenium-api-3.13.0.jar;C:\Users\ANUMANTHU\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.13.0\selenium-remote-driver-3.13.0.jar;C:\Users\ANUMANTHU\.m2\repository\net\bytebuddy\byte-buddy\1.8.3\byte-buddy-1.8.3.jar;C:\Users\ANUMANTHU\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\ANUMANTHU\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\ANUMANTHU\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\ANUMANTHU\.m2\repository\com\google\code\gson\gson\2.8.4\gson-2.8.4.jar;C:\Users\ANUMANTHU\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\ANUMANTHU\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\ANUMANTHU\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\ANUMANTHU\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\ANUMANTHU\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\ANUMANTHU\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\ANUMANTHU\.m2\repository\org\apache\httpcomponents\httpclient\4.5.5\httpclient-4.5.5.jar;C:\Users\ANUMANTHU\.m2\repository\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar;C:\Users\ANUMANTHU\.m2\repository\com\squareup\okhttp3\okhttp\3.10.0\okhttp-3.10.0.jar;C:\Users\ANUMANTHU\.m2\repository\com\squareup\okio\okio\1.14.1\okio-1.14.1.jar;C:\Users\ANUMANTHU\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\ANUMANTHU\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\ANUMANTHU\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\ANUMANTHU\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.0\log4j-api-2.11.0.jar;C:\Users\ANUMANTHU\.m2\repository\org\apache\logging\log4j\log4j-core\2.11.0\log4j-core-2.11.0.jar;C:\Users\ANUMANTHU\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\ANUMANTHU\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\ANUMANTHU\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\ANUMANTHU\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\ANUMANTHU\.m2\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\Users\ANUMANTHU\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\ANUMANTHU\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\ANUMANTHU\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.22.0\surefire-testng-utils-2.22.0.jar;C:\Users\ANUMANTHU\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.22.0\surefire-grouper-2.22.0.jar;"/>
+    <property name="java.class.path" value="C:\Users\ANUMANTHU\Desktop\Selenium Learning\Softwares\apache-maven-3.5.3-bin\apache-maven-3.5.3\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.vendor" value="&quot;Oracle Corporation&quot;"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
-    <property name="java.vm.specification.version" value="10"/>
+    <property name="maven.conf" value="C:\Users\ANUMANTHU\Desktop\Selenium Learning\Softwares\apache-maven-3.5.3-bin\apache-maven-3.5.3\bin\../conf"/>
     <property name="os.name" value="Windows 7"/>
+    <property name="java.vm.specification.version" value="10"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-10.0.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\ANUMAN~1\AppData\Local\Temp\surefire18195389897319166610\surefirebooter7609123854284286386.jar C:\Users\ANUMANTHU\AppData\Local\Temp\surefire18195389897319166610 2018-07-31T21-29-40_858-jvmRun1 surefire8973998291677794902tmp surefire_09207543510006114104tmp"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\ANUMANTHU\Desktop\Selenium Learning\Workspace\MavenProjectSample\target\test-classes;C:\Users\ANUMANTHU\Desktop\Selenium Learning\Workspace\MavenProjectSample\target\classes;C:\Users\ANUMANTHU\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\ANUMANTHU\.m2\repository\org\seleniumhq\selenium\selenium-support\3.13.0\selenium-support-3.13.0.jar;C:\Users\ANUMANTHU\.m2\repository\org\seleniumhq\selenium\selenium-api\3.13.0\selenium-api-3.13.0.jar;C:\Users\ANUMANTHU\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.13.0\selenium-remote-driver-3.13.0.jar;C:\Users\ANUMANTHU\.m2\repository\net\bytebuddy\byte-buddy\1.8.3\byte-buddy-1.8.3.jar;C:\Users\ANUMANTHU\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\ANUMANTHU\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\ANUMANTHU\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\ANUMANTHU\.m2\repository\com\google\code\gson\gson\2.8.4\gson-2.8.4.jar;C:\Users\ANUMANTHU\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\ANUMANTHU\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\ANUMANTHU\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\ANUMANTHU\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\ANUMANTHU\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\ANUMANTHU\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\ANUMANTHU\.m2\repository\org\apache\httpcomponents\httpclient\4.5.5\httpclient-4.5.5.jar;C:\Users\ANUMANTHU\.m2\repository\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar;C:\Users\ANUMANTHU\.m2\repository\com\squareup\okhttp3\okhttp\3.10.0\okhttp-3.10.0.jar;C:\Users\ANUMANTHU\.m2\repository\com\squareup\okio\okio\1.14.1\okio-1.14.1.jar;C:\Users\ANUMANTHU\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\ANUMANTHU\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\ANUMANTHU\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\ANUMANTHU\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.0\log4j-api-2.11.0.jar;C:\Users\ANUMANTHU\.m2\repository\org\apache\logging\log4j\log4j-core\2.11.0\log4j-core-2.11.0.jar;C:\Users\ANUMANTHU\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\ANUMANTHU\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\ANUMANTHU\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\ANUMANTHU\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\ANUMANTHU\.m2\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\Users\ANUMANTHU\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\ANUMANTHU\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\ANUMANTHU\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.22.0\surefire-testng-utils-2.22.0.jar;C:\Users\ANUMANTHU\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.22.0\surefire-grouper-2.22.0.jar;"/>
+    <property name="maven.home" value="C:\Users\ANUMANTHU\Desktop\Selenium Learning\Softwares\apache-maven-3.5.3-bin\apache-maven-3.5.3\bin\.."/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\ANUMANTHU"/>
     <property name="user.language" value="en"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.version.date" value="2018-04-17"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-10.0.1"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\ANUMANTHU\Desktop\Selenium Learning\Workspace\MavenProjectSample"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\ANUMAN~1\AppData\Local\Temp\surefire18195389897319166610\surefirebooter7609123854284286386.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="10.0.1+10"/>
@@ -43,75 +44,107 @@
     <property name="os.version" value="6.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="Cp1252"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="java.vendor.version" value="18.3"/>
-    <property name="localRepository" value="C:\Users\ANUMANTHU\.m2\repository"/>
     <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\ANUMAN~1\AppData\Local\Temp\"/>
     <property name="java.version" value="10.0.1"/>
     <property name="user.dir" value="C:\Users\ANUMANTHU\Desktop\Selenium Learning\Workspace\MavenProjectSample"/>
     <property name="os.arch" value="amd64"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\ANUMANTHU\Desktop\Selenium Learning\Workspace\MavenProjectSample"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="sun.os.patch.level" value="Service Pack 1"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-10.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;c:\Program Files (x86)\AMD APP\bin\x86_64;c:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Java\jdk-10.0.1\bin;C:\Program Files\Java\jre-10.0.1\bin;C:\Users\ANUMANTHU\Desktop\Selenium Learning\Softwares\apache-maven-3.5.3-bin\apache-maven-3.5.3\bin;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-10.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;c:\Program Files (x86)\AMD APP\bin\x86_64;c:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Java\jdk-10.0.1\bin;C:\Program Files\Java\jre-10.0.1\bin;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Users\ANUMANTHU\Desktop\Selenium Learning\Softwares\apache-maven-3.5.3-bin\apache-maven-3.5.3\bin;;."/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vm.version" value="10.0.1+10"/>
+    <property name="classworlds.conf" value="C:\Users\ANUMANTHU\Desktop\Selenium Learning\Softwares\apache-maven-3.5.3-bin\apache-maven-3.5.3\bin\..\bin\m2.conf"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="library.jansi.path" value="C:\Users\ANUMANTHU\Desktop\Selenium Learning\Softwares\apache-maven-3.5.3-bin\apache-maven-3.5.3\bin\..\lib\jansi-native"/>
     <property name="java.class.version" value="54.0"/>
   </properties>
-  <testcase name="openUrl" classname="academy.HomePage" time="3.347">
-    <failure message="org/openqa/selenium/chrome/ChromeDriver" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org/openqa/selenium/chrome/ChromeDriver
-	at academy.HomePage.openUrl(HomePage.java:26)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.chrome.ChromeDriver
-	at academy.HomePage.openUrl(HomePage.java:26)
+  <testcase name="initialize" classname="academy.HomePage" time="20.259">
+    <failure message="timeout&#10;  (Session info: chrome=68.0.3440.106)&#10;  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 15.13 seconds&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;ANUMANTHU-PC&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;10.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\ANUMAN~1\AppData\Local\Temp\scoped_dir7328_18569}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=68.0.3440.106, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]&#10;Session ID: 16f35fd5f8b7c34b95f49f7c4c7aae87" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+timeout
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.13 seconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'ANUMANTHU-PC', ip: '192.168.1.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '10.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\ANUMAN~1\AppData\Local\Temp\scoped_dir7328_18569}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=68.0.3440.106, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 16f35fd5f8b7c34b95f49f7c4c7aae87
+	at academy.HomePage.initialize(HomePage.java:50)
 </failure>
+    <system-out><![CDATA[Driver name    ChromeDriver: chrome on XP (16f35fd5f8b7c34b95f49f7c4c7aae87)
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb) on port 6473
+Only local connections are allowed.
+Aug 23, 2018 9:13:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+[1535039052.854][SEVERE]: Timed out receiving message from renderer: 15.000
+[1535039052.862][SEVERE]: Timed out receiving message from renderer: -0.008
+]]></system-err>
   </testcase>
-  <testcase name="openUrl" classname="academy.HomePage" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="openUrl" classname="academy.HomePage" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="initialize" classname="academy.HomePage" time="0">
-    <skipped message="org/openqa/selenium/chrome/ChromeDriver"/>
-  </testcase>
-  <testcase name="initialize" classname="academy.HomePage" time="0">
-    <skipped message="org/openqa/selenium/chrome/ChromeDriver"/>
-  </testcase>
-  <testcase name="initialize" classname="academy.HomePage" time="0">
-    <skipped message="org/openqa/selenium/chrome/ChromeDriver"/>
-  </testcase>
-  <testcase name="closeBrowser" classname="academy.HomePage" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="closeBrowser" classname="academy.HomePage" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="closeBrowser" classname="academy.HomePage" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="openUrl" classname="academy.AssertionTestCase" time="3.349">
-    <failure message="org/openqa/selenium/chrome/ChromeDriver" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org/openqa/selenium/chrome/ChromeDriver
-	at academy.AssertionTestCase.openUrl(AssertionTestCase.java:26)
+  <testcase name="initialize" classname="academy.HomePage" time="20.243">
+    <failure message="timeout&#10;  (Session info: chrome=68.0.3440.106)&#10;  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 15.14 seconds&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;ANUMANTHU-PC&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;10.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\ANUMAN~1\AppData\Local\Temp\scoped_dir4720_8298}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=68.0.3440.106, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]&#10;Session ID: d2526bf81449614b104e6225d2a5976b" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+timeout
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.14 seconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'ANUMANTHU-PC', ip: '192.168.1.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '10.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\ANUMAN~1\AppData\Local\Temp\scoped_dir4720_8298}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=68.0.3440.106, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: d2526bf81449614b104e6225d2a5976b
+	at academy.HomePage.initialize(HomePage.java:50)
 </failure>
+    <system-out><![CDATA[Driver name    ChromeDriver: chrome on XP (d2526bf81449614b104e6225d2a5976b)
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb) on port 48451
+Only local connections are allowed.
+Aug 23, 2018 9:14:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+[1535039094.578][SEVERE]: Timed out receiving message from renderer: 15.000
+[1535039094.591][SEVERE]: Timed out receiving message from renderer: -0.014
+]]></system-err>
   </testcase>
-  <testcase name="basePageNavigation" classname="academy.AssertionTestCase" time="0">
-    <skipped message="org/openqa/selenium/chrome/ChromeDriver"/>
-  </testcase>
-  <testcase name="closeBrowser" classname="academy.AssertionTestCase" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="openUrl" classname="academy.ValaidateNavigationBar" time="3.351">
-    <failure message="org/openqa/selenium/chrome/ChromeDriver" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org/openqa/selenium/chrome/ChromeDriver
-	at academy.ValaidateNavigationBar.openUrl(ValaidateNavigationBar.java:24)
+  <testcase name="initialize" classname="academy.HomePage" time="20.156">
+    <failure message="timeout&#10;  (Session info: chrome=68.0.3440.106)&#10;  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 15.09 seconds&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;ANUMANTHU-PC&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;10.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\ANUMAN~1\AppData\Local\Temp\scoped_dir7184_25388}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=68.0.3440.106, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]&#10;Session ID: 4b3d8decaa0e6f7b442fab145b008967" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+timeout
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.09 seconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'ANUMANTHU-PC', ip: '192.168.1.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '10.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\ANUMAN~1\AppData\Local\Temp\scoped_dir7184_25388}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=68.0.3440.106, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 4b3d8decaa0e6f7b442fab145b008967
+	at academy.HomePage.initialize(HomePage.java:50)
 </failure>
+    <system-out><![CDATA[Driver name    ChromeDriver: chrome on XP (4b3d8decaa0e6f7b442fab145b008967)
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb) on port 33557
+Only local connections are allowed.
+Aug 23, 2018 9:14:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+[1535039138.370][SEVERE]: Timed out receiving message from renderer: 15.000
+[1535039138.374][SEVERE]: Timed out receiving message from renderer: -0.004
+]]></system-err>
   </testcase>
-  <testcase name="validateNavBar" classname="academy.ValaidateNavigationBar" time="0">
-    <skipped message="org/openqa/selenium/chrome/ChromeDriver"/>
-  </testcase>
-  <testcase name="closeBrowser" classname="academy.ValaidateNavigationBar" time="0">
-    <skipped/>
+  <testcase name="basePageNavigation" classname="academy.AssertionTestCase" time="10.077"/>
+  <testcase name="validateNavBar" classname="academy.ValaidateNavigationBar" time="11.475">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at academy.ValaidateNavigationBar.validateNavBar(ValaidateNavigationBar.java:43)
+</failure>
+    <system-out><![CDATA[Driver name    ChromeDriver: chrome on XP (1a4272e11f7f246b07d8d173bb1e13d1)
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb) on port 32721
+Only local connections are allowed.
+Aug 23, 2018 9:16:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
   </testcase>
 </testsuite>
