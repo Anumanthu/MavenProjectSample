@@ -22,16 +22,22 @@ public class Base {
 	public Properties prop;
 	public String browserName;
 	public String url;
+	public String url1;
 	
 	public WebDriver initializeDriver() throws IOException
 	{
 
 	prop= new Properties();
-	FileInputStream fis=new FileInputStream("C:\\Users\\ANUMANTHU\\Desktop\\Selenium Learning\\Workspace\\MyFrameworkSelenium\\src\\main\\java\\resources\\dataset.properties");
+	FileInputStream fis=new FileInputStream("C:\\Users\\ANUMANTHU\\Desktop\\Selenium Learning\\Workspace\\MavenProjectSample\\src\\main\\java\\resources\\dataset.properties");
 
 	prop.load(fis);
 	browserName=prop.getProperty("browser");
 	url=prop.getProperty("url");
+	
+	
+	System.out.println(url);
+	
+//	url1=prop.getProperty("facebookurl1");
 	
 	//System.out.println(browserName);
 

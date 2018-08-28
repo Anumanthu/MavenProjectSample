@@ -1,28 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
+  <parameter name="password" value="sandhya.143"/>
+  <parameter name="userid" value="anumanthunitt@gmail.com"/>
   <test name="Test(failed)">
     <classes>
-      <class name="academy.AssertionTestCase">
+      <class name="academy.FaceBookPrintFriends">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="openUrl"/>
+          <include name="login" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="printFriendsList" invocation-numbers="0"/>
+          <include name="openUrl1"/>
         </methods>
-      </class> <!-- academy.AssertionTestCase -->
-      <class name="academy.HomePage">
-        <methods>
-          <include name="initialize" invocation-numbers="0 1 2"/>
-          <include name="openUrl"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- academy.HomePage -->
-      <class name="academy.ValaidateNavigationBar">
-        <methods>
-          <include name="validateNavBar"/>
-          <include name="closeBrowser"/>
-          <include name="openUrl"/>
-        </methods>
-      </class> <!-- academy.ValaidateNavigationBar -->
+      </class> <!-- academy.FaceBookPrintFriends -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

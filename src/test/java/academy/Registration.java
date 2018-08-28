@@ -7,7 +7,9 @@ import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
+import junit.framework.Assert;
 import pageobjects.LandingPage;
 import pageobjects.RegisterPage;
 import resources.Base;
@@ -54,8 +56,19 @@ public class Registration extends Base{
 	}
 	
 	@Test
-	public void assertEqulasverify()
+	public <HardAssert> void assertEqulasverify()
 	{
+		String actual="Actaul";
+		String expected="Expected";
+		
+		SoftAssert sft=new SoftAssert();
+		
+	
+		
+		Assert.assertEquals(actual, expected);
+		
+		Assert.assertTrue(true);
+		Assert.assertFalse(false);
 		
 	}
 	

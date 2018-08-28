@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="academy.Registration">
+      <class name="academy.FaceBookPrintFriends">
         <methods>
-          <include name="register"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- academy.Registration -->
+      </class> <!-- academy.FaceBookPrintFriends -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

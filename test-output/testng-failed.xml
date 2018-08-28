@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Suite]">
+  <parameter name="password" value="sandhya.143"/>
+  <parameter name="userid" value="anumanthunitt@gmail.com"/>
+  <test name="Test(failed)">
     <classes>
-      <class name="academy.Registration">
+      <class name="academy.FaceBookPrintFriends">
         <methods>
-          <include name="register"/>
+          <include name="login" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="printFriendsList" invocation-numbers="0"/>
+          <include name="openUrl1"/>
         </methods>
-      </class> <!-- academy.Registration -->
+      </class> <!-- academy.FaceBookPrintFriends -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
