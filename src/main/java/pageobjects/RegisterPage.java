@@ -20,7 +20,7 @@ public class RegisterPage {
 	@FindBy(how=How.ID,using="user_name")
 	public WebElement fullname;
 	
-	
+
 	
 /*
 	@FindBy(id="user_name")

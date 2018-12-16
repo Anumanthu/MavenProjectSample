@@ -18,14 +18,20 @@ import resources.Base;
 public class AssertionTestCase extends Base
 {
 
-	private static Logger log=LogManager.getLogger(AssertionTestCase.class.getName());
+private static Logger log=LogManager.getLogger(AssertionTestCase.class.getName());
+	
+	
+	
+	//log=LogManager.getLogger(AssertionTestCase.class.getName());
+	
 
 	@BeforeMethod
 	public void openUrl() throws IOException
 	{
+		//log=logging();
 		driver =initializeDriver();
 		 log.info("Driver initialized");
-		 driver.get(url);
+		 driver.get(url1);
 		 log.info("Opened url successfully");
 	 
 	}

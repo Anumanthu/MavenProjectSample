@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" verbose="0">
-  <parameter name="password" value="sandhya.143"/>
-  <parameter name="userid" value="anumanthunitt@gmail.com"/>
-  <test name="Test(failed)">
+<suite name="Failed suite [academy.AssertionTestCase]" verbose="0">
+  <test name="Command line test(failed)">
     <classes>
-      <class name="academy.FaceBookPrintFriends">
+      <class name="academy.AssertionTestCase">
         <methods>
-          <include name="login" invocation-numbers="0"/>
-          <include name="openUrl1"/>
+          <include name="closeBrowser"/>
+          <include name="openUrl"/>
+          <include name="basePageNavigation"/>
         </methods>
-      </class> <!-- academy.FaceBookPrintFriends -->
+      </class> <!-- academy.AssertionTestCase -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [academy.AssertionTestCase] -->

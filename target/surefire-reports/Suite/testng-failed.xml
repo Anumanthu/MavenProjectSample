@@ -3,14 +3,18 @@
 <suite name="Failed suite [Suite]" verbose="0">
   <parameter name="password" value="sandhya.143"/>
   <parameter name="userid" value="anumanthunitt@gmail.com"/>
-  <test name="Test(failed)">
+  <listeners>
+    <listener class-name="academy.ListenersClass"/>
+  </listeners>
+  <test name="FacebookFriends(failed)">
     <classes>
       <class name="academy.FaceBookPrintFriends">
         <methods>
-          <include name="login" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="printFriendsList" invocation-numbers="0"/>
           <include name="openUrl1"/>
         </methods>
       </class> <!-- academy.FaceBookPrintFriends -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- FacebookFriends(failed) -->
 </suite> <!-- Failed suite [Suite] -->

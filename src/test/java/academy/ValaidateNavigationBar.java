@@ -23,7 +23,7 @@ public class ValaidateNavigationBar extends Base{
 	{
 	 driver =initializeDriver();
 	 log.info("Driver initialized");
-	 driver.get(url);
+	 driver.get(url1);
 	 log.info("Opened url successfully");
 	 
 	 

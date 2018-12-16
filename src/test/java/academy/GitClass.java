@@ -11,80 +11,63 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 public class GitClass {
 
 	public static void main(String[] args) throws MalformedURLException {
-	
-		
-	
-		DesiredCapabilities ch=new DesiredCapabilities();
-		
+
+		DesiredCapabilities ch = new DesiredCapabilities();
+
 		ch.acceptInsecureCerts();
 		ch.setBrowserName("chrome");
 		ch.setPlatform(Platform.WINDOWS);
-		
-		//If we want to run tests on nodes using Selenium Grid
-		
-		WebDriver driver =new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),ch);
-		
+
+		// If we want to run tests on nodes using Selenium Grid
+
+		WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), ch);
+
 		driver.get("https://www.google.com/");
-		
 
 	}
-	
-	public void gitmethod()
-	{
+
+	public void gitmethod() {
 		System.out.println("This is my gitmethod");
 	}
-	
-	public void gitmethod2()
-	{
+
+	public void gitmethod2() {
 		System.out.println("This is my gitmethod2");
 	}
 
-	public void gitmethod3()
-	{
+	public void gitmethod3() {
 		System.out.println("This is my gitmethod3");
 	}
-	
-	
-	public void gitmethod4()
-	{
+
+	public void gitmethod4() {
 		System.out.println("This is my gitmethod4");
-	}public void gitmethod5()
-	{
+	}
+
+	public void gitmethod5() {
 		System.out.println("This is my gitmethod5");
 	}
-	
-	
-	
-	
+
 }
 
 class GitClass2 {
 
 	public static void main(String[] args) {
-	
-		
-	
 
 	}
-	
-	public void gitmethod1()
-	{
+
+	public void gitmethod1() {
 		System.out.println("This is my gitmethod Git Class 2");
 	}
-	
-	public void gitmethod2()
-	{
+
+	public void gitmethod2() {
 		System.out.println("This is my gitmethod2 Git Class 2");
 	}
 
-	public void gitmethod3()
-	{
+	public void gitmethod3() {
 		System.out.println("This is my gitmethod3 Git Class 2");
 	}
-	
-	public void gitmethod4()
-	{
+
+	public void gitmethod4() {
 		System.out.println("This is my gitmethod4 Git Class 2");
 	}
-	
+
 }

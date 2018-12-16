@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="password" value="sandhya.143"/>
   <parameter name="userid" value="anumanthunitt@gmail.com"/>
-  <test name="Test(failed)">
+  <listeners>
+    <listener class-name="academy.ListenersClass"/>
+    <listener class-name="resources.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="FacebookFriends(failed)">
     <classes>
       <class name="academy.FaceBookPrintFriends">
         <methods>
-          <include name="login" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="printFriendsList" invocation-numbers="0"/>
           <include name="openUrl1"/>
         </methods>
       </class> <!-- academy.FaceBookPrintFriends -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- FacebookFriends(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\ANUMANTHU\Desktop\Selenium Learning\Workspace\MavenProjectSample\testng2.xml</span>
+                    <span>C:\Users\1018546\Desktop\Selenium Learning\Workspace\MavenProjectSample\testng2.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +102,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="academy.FaceBookPrintFriends" class="method navigator-link" hash-for-method="login(anumanthunitt@gmail.com, sandhya.143)">login(anumanthunitt@gmail.com, sandhya.143)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="academy.FaceBookPrintFriends" class="method navigator-link" hash-for-method="printFriendsList(anumanthunitt@gmail.com, sandhya.143)">printFriendsList(anumanthunitt@gmail.com, sandhya.143)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -130,12 +135,20 @@
                   <span class="parameters">(anumanthunitt@gmail.com, sandhya.143)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="printFriendsList(anumanthunitt@gmail.com, sandhya.143)">
+                  </a> <!-- printFriendsList(anumanthunitt@gmail.com, sandhya.143) -->
+                  <span class="method-name">printFriendsList</span>
+                  <span class="parameters">(anumanthunitt@gmail.com, sandhya.143)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ANUMANTHU\Desktop\Selenium Learning\Workspace\MavenProjectSample\testng2.xml</span>
+            <span class="header-content">C:\Users\1018546\Desktop\Selenium Learning\Workspace\MavenProjectSample\testng2.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,11 +157,14 @@
 &lt;suite name=&quot;Suite&quot; verbose=&quot;0&quot;&gt;
   &lt;parameter name=&quot;password&quot; value=&quot;sandhya.143&quot;/&gt;
   &lt;parameter name=&quot;userid&quot; value=&quot;anumanthunitt@gmail.com&quot;/&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;academy.ListenersClass&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;FacebookFriends&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;academy.FaceBookPrintFriends&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- FacebookFriends --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -160,7 +176,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">FacebookFriends (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -186,16 +202,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'login')
+data.setCell(0, 1, 'printFriendsList')
 data.setCell(0, 2, 'academy.FaceBookPrintFriends')
-data.setCell(0, 3, 9611);
+data.setCell(0, 3, 165788);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'login')
+data.setCell(1, 2, 'academy.FaceBookPrintFriends')
+data.setCell(1, 3, 12453);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -237,8 +257,24 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">login(anumanthunitt@gmail.com, sandhya.143)</span>
-                <span class="method-start">10397 ms</span>
+                <span class="method-start">4996 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">17449 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openUrl1</span>
+                <span class="method-start">17726 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">printFriendsList(anumanthunitt@gmail.com, sandhya.143)</span>
+                <span class="method-start">22412 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">188201 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
