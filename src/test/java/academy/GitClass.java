@@ -35,9 +35,7 @@ public class GitClass {
 		System.out.println("This is my gitmethod4");
 	}
 
-	public void gitmethod5() {
-		System.out.println("This is my gitmethod5");
-	}
+
 
 }
 
