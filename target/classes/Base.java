@@ -29,11 +29,13 @@ public class Base {
 	public String browserName;
 	public String url1;
 	public String url2;
-	public String path_propertiesfile = "C:\\Users\\1018546\\Desktop\\Selenium Learning\\Workspace\\MavenProjectSample\\src\\main\\java\\resources\\dataset.properties";
-	public String driverpath_exe;
+	public String path_propertiesfile = ".\\src\\main\\java\\resources\\config.properties";
+
 	public int wait_time;
 
 	public static Logger log;
+
+   //public static Logger log= LogManager.getLogger(Class.class.getName());//Need to work on logs to customize the code
 
 	public WebDriver initializeDriver() throws IOException {
 
@@ -43,8 +45,9 @@ public class Base {
 		// prop.load(fis);
 		prop.load(fis);
 		browserName = prop.getProperty("browser");
+
 		url1 = prop.getProperty("url1");
-		driverpath_exe = prop.getProperty("driverpath_exe");
+
 		wait_time = Integer.parseInt(prop.getProperty("wait_time"));
 
 		System.out.println(url1);
@@ -57,24 +60,24 @@ public class Base {
 
 			if (browserName.equalsIgnoreCase("Chrome")) {
 
-				System.setProperty("webdriver.chrome.driver", driverpath_exe + "\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", ".\\LibraryFolder\\Drivers\\chromedriver.exe");
 				driver = new ChromeDriver();
 				// System.out.println("Driver name "+driver);
 
 			} else if (browserName.equalsIgnoreCase("firefox")) {
-				System.setProperty("webdriver.gecko.driver", driverpath_exe + "\\geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver", ".\\LibraryFolder\\Drivers\\geckodriver.exe");
 				driver = new FirefoxDriver();
 				// System.out.println("Driver name "+driver);
 
 			} else {
-				System.setProperty("webdriver.ie.driver", driverpath_exe + "\\IEDriverServer.exe");
+				System.setProperty("webdriver.ie.driver", ".\\LibraryFolder\\Drivers\\IEDriverServer.exe");
 
 				driver = new InternetExplorerDriver();
 
 			}
 
 		}
-		
+
 		driver.manage().timeouts().implicitlyWait(wait_time, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
@@ -109,22 +112,6 @@ public class Base {
 	public static Logger logging() {
 		log = LogManager.getLogger(Class.class.getName());
 		return log;
-
-	}
-
-	public void getScreenshot(String failedtestcasename) throws IOException {
-
-		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-
-		// File dest=new File("C:\\Users\\ANUMANTHU\\Desktop\\Selenium
-		// Learning\\ScreenShots\\screenshot.png");
-
-		FileUtils.copyFile(src, new File("C:\\Users\\ANUMANTHU\\Desktop\\Selenium Learning\\ScreenShots\\"
-				+ failedtestcasename + " screenshot.png"));
-
-		// File src1=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-
-		// FileUtils.copyFile(src1, new File("path of image to be svaed"));
 
 	}
 

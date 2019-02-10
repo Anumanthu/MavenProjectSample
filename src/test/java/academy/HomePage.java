@@ -28,6 +28,7 @@ public class HomePage extends Base {
 	TestUtil testUtil;
 
 	private static Logger log = LogManager.getLogger(HomePage.class.getName());
+	// private static Logger log =Base.logging();
 
 	@BeforeMethod
 	public void openUrl() throws IOException, InterruptedException {
@@ -87,18 +88,18 @@ public class HomePage extends Base {
 
 		testUtil = new TestUtil();
 
-		Object[][] data = TestUtil.getTestData(sheetName);
+		// Object[][] data = TestUtil.getTestData(sheetName);
 
-		/*
-		 * Object[][] data=new Object[3][2];
-		 * 
-		 * data[0][0]="Anumanthu@gmail.com"; data[0][1]="XXXXXXXXX";
-		 * 
-		 * data[1][0]="Divya@gmail.com"; data[1][1]="YYYYYY";
-		 * 
-		 * data[2][0]="Nandini@gmail.com"; data[2][1]="ZZZZZ";
-		 * 
-		 */
+		Object[][] data = new Object[3][2];
+
+		data[0][0] = "Anumanthu@gmail.com";
+		data[0][1] = "XXXXXXXXX";
+
+		data[1][0] = "Divya@gmail.com";
+		data[1][1] = "YYYYYY";
+
+		data[2][0] = "Nandini@gmail.com";
+		data[2][1] = "ZZZZZ";
 
 		return data;
 

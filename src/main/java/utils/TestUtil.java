@@ -18,7 +18,7 @@ public class TestUtil {
 	
 	//See the file exists or not and check properties file
 	
-	public static String PropertiesFilePath="C:\\Users\\1018546\\Desktop\\Selenium Learning\\Workspace\\MavenProjectSample\\src\\main\\java\\resources\\dataset.properties";
+	public static String PropertiesFilePath=".\\src\\main\\java\\resources\\config.properties";
 	
 	static Properties prop1;
 	public static String excel_path;

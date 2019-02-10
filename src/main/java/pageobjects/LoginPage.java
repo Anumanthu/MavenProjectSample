@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
@@ -53,9 +54,11 @@ public WebDriver driver;
 		
 		PageFactory.initElements(driver, this);//Intialize all the locators and driver is test case object is assigning to current class object 'this'
 
+		
 	}
 	
 	//PageFactory.initElements(driver, this);
+
 	
 	
 	@FindBy(css="input[id='user_email']")
@@ -73,16 +76,19 @@ public WebDriver driver;
 	public WebElement getEmail()
 	{
 		return driver.findElement(email);
+		//return email1
 	}
 	
 	public WebElement getPassword()
 	{
 		return driver.findElement(password);
+		//return password1
 	}
 	
 	public WebElement getLogin()
 	{
 		return driver.findElement(login);
+		//return login1
 	}
 
 	

@@ -7,10 +7,13 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import resources.Base;
+import utils.HelperClass;
+
+
 
 public class ListenersClass implements  ITestListener{
 	
-	Base d=new Base();
+	HelperClass hp=new HelperClass();
 
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
@@ -29,7 +32,7 @@ public class ListenersClass implements  ITestListener{
 		String failedtestcasename=result.getName();
 		
 		try {
-			d.getScreenshot(failedtestcasename);
+			hp.getScreenshot(Base.driver,failedtestcasename);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

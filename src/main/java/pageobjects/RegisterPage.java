@@ -14,7 +14,7 @@ public class RegisterPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	//Below all 3 are same using id,how,using combnation and xpath
+	//Below all 3 are same using id,how,using combination and xpath
 	
 	
 	@FindBy(how=How.ID,using="user_name")
