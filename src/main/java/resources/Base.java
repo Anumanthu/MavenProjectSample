@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.io.FileUtils;
+//import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
@@ -15,6 +15,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 //import academy.AssertionTestCase;
 
@@ -114,5 +115,14 @@ public class Base {
 		return log;
 
 	}
+	
+	public static WebDriverWait explictWait(WebDriver driver,int w)
+	{
+		WebDriverWait d=new WebDriverWait(driver,w);
+		
+		
+		return d;
+	}
 
+	
 }
