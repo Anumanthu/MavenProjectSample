@@ -47,6 +47,9 @@ class GitClass2 {
 
 	public void gitmethod1() {
 		System.out.println("This is my gitmethod Git Class 2");
+		
+		System.out.println("This is my gitmethod Git Class 3");
+		System.out.println("This is my gitmethod Git Class 4");
 	}
 
 	public void gitmethod2() {
