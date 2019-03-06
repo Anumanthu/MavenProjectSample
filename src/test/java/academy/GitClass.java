@@ -27,15 +27,15 @@ public class GitClass {
 	}
 
 
-	
+	public void gitmethod1() {
+		System.out.println("This is my gitmethod4");
+	}
 	
 	public void gitmethod4() {
 		System.out.println("This is my gitmethod4");
 	}
 
-	public void gitmethod5() {
-		System.out.println("This is my gitmethod5");
-	}
+
 
 }
 
