@@ -1,5 +1,12 @@
 package pageobjects;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,7 +19,7 @@ public class LoginPage {
 	
 	
 	
-public WebDriver driver;
+public static WebDriver driver;
 	
 	
 	By email=By.cssSelector("input[id='user_email']");
@@ -52,7 +59,7 @@ public WebDriver driver;
 	{
 		this.driver=driver;//this step is Not required
 		
-		PageFactory.initElements(driver, this);//Intialize all the locators and driver is test case object is assigning to current class object 'this'
+		PageFactory.initElements(driver, this); //Intialize all the locators and driver is test case object is assigning to current class object 'this'
 
 		
 	}
@@ -73,6 +80,7 @@ public WebDriver driver;
 	
 
 	
+
 	public WebElement getEmail()
 	{
 		return driver.findElement(email);
@@ -90,6 +98,40 @@ public WebDriver driver;
 		return driver.findElement(login);
 		//return login1
 	}
+	
+	public WebElement getElement(By element)
+	{
+		
+		
+		
+		return driver.findElement(element);
+	   	
+	}
+	public void parseJson(String email) throws FileNotFoundException, IOException, ParseException
+	{
+		Object obj = new JSONParser().parse(new FileReader("C:\\Users\\akindint\\Desktop\\Selenium Learning\\Workspace\\MavenProjectSample\\src\\main\\java\\pageobjects\\Landingpage2.json")); 
+	    
+	    // typecasting obj to JSONObject 
+	    JSONObject jo = (JSONObject) obj; 
+	      
+	    // getting firstName and lastName 
+	    String email1 = (String) jo.get(email); 
+	    
+	   
+	    System.out.println(email1);
+	   
+	    
+	}
+	
+      public static void main(String args[])
+      {
+    	  LoginPage l=new LoginPage(driver);
+    	  
+    	  
+      }
+    
+	
+	
 
 	
 	

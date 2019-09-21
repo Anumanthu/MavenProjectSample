@@ -40,7 +40,7 @@ public class ValaidateNavigationBar extends Base{
 		 driver.manage().window().maximize();
 		 
 		 Assert.assertTrue(l.navigationBar.isDisplayed());
-		 Assert.assertTrue(false);
+		// Assert.assertTrue(false);
 		 
 		 log.info("Navigation bar Successfully displayed");
 		 

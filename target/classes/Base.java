@@ -6,15 +6,18 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.io.FileUtils;
+//import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 //import academy.AssertionTestCase;
 
@@ -46,6 +49,7 @@ public class Base {
 		prop.load(fis);
 		browserName = prop.getProperty("browser");
 
+		//url1 = prop.getProperty("url1");
 		url1 = prop.getProperty("url1");
 
 		wait_time = Integer.parseInt(prop.getProperty("wait_time"));
@@ -59,9 +63,28 @@ public class Base {
 		if (driver == null) {
 
 			if (browserName.equalsIgnoreCase("Chrome")) {
+				
+				//**************************First way*********************
+				
+				//1. To run in Headless mode define the ChromeOptions as shown below 
+				ChromeOptions options=new ChromeOptions();
+				//options.addArguments("--headless");
+			//	options.addArguments("headless"); //we can define either way
+				
+			//	***********************Second way**************************************
+				// Creating a new instance of the HTML unit driver
+                
+                //WebDriver driver1 = new HtmlUnitDriver();
+				
+				options.addArguments("--disable-notifications");
+				
+				
+				String path=System.getProperty("user.dir");//it will get current project directoy/path
 
 				System.setProperty("webdriver.chrome.driver", ".\\LibraryFolder\\Drivers\\chromedriver.exe");
-				driver = new ChromeDriver();
+				//driver = new ChromeDriver();
+				//Headless mode
+				driver = new ChromeDriver(options);
 				// System.out.println("Driver name "+driver);
 
 			} else if (browserName.equalsIgnoreCase("firefox")) {
@@ -114,5 +137,14 @@ public class Base {
 		return log;
 
 	}
+	
+	public static WebDriverWait explictWait(WebDriver driver,int w)
+	{
+		WebDriverWait d=new WebDriverWait(driver,w);
+		
+		
+		return d;
+	}
 
+	
 }
