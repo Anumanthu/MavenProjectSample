@@ -17,10 +17,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-<<<<<<< HEAD
-
-=======
->>>>>>> 996844fcbc0c08c253c6b0e2bc6c0bfe7181f2ce
 
 //import academy.AssertionTestCase;
 
