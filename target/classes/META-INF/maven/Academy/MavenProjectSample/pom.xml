@@ -102,6 +102,7 @@
     <artifactId>log4j-core</artifactId>
     <version>2.11.1</version>
   </dependency>
+<<<<<<< HEAD
   
   <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
 <!-- dependency>
@@ -109,6 +110,13 @@
     <artifactId>maven-compiler-plugin</artifactId>
     <version>3.8.0</version>
 </dependency -->
+=======
+  <dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.6</version>
+</dependency>
+>>>>>>> 996844fcbc0c08c253c6b0e2bc6c0bfe7181f2ce
 
 
   

@@ -26,15 +26,12 @@ public class GitClass {
 
 	}
 
-
-	
-	
-	public void gitmethod4() {
+	public void gitmethod1() {
 		System.out.println("This is my gitmethod4");
 	}
 
-	public void gitmethod5() {
-		System.out.println("This is my gitmethod5");
+	public void gitmethod4() {
+		System.out.println("This is my gitmethod4");
 	}
 
 }
@@ -47,6 +44,9 @@ class GitClass2 {
 
 	public void gitmethod1() {
 		System.out.println("This is my gitmethod Git Class 2");
+
+		System.out.println("This is my gitmethod Git Class 3");
+		System.out.println("This is my gitmethod Git Class 4");
 	}
 
 	public void gitmethod2() {
@@ -58,6 +58,16 @@ class GitClass2 {
 	}
 
 	public void gitmethod4() {
+		System.out.println("This is my gitmethod4 Git Class 2");
+	}
+
+	public void gitmethod7() {
+		System.out.println("This is my gitmethod4 Git Class 7");
+	}
+
+
+
+	public void gitmethod10() {
 		System.out.println("This is my gitmethod4 Git Class 2");
 	}
 
